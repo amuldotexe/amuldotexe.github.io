@@ -1,5 +1,6 @@
 ---
 bookCollapseSection: true
+title: Coding Notes
 ---
 
 # ABC
