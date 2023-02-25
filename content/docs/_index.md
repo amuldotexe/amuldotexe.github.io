@@ -16,10 +16,3 @@ Hope this is useful to you
 
 Feel free to DM me on twitter:
 twitter.com/amuldotexe
-
-
-# ABC
-
-## DEF
-
-### GHI
