@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-title: Visual Notes
+title : Visual Notes
 ---
 
 # ABC
