@@ -1,6 +1,6 @@
 ---
 title: the diary of amuldotexe
-
+type: docs
 ---
 Hi
 
