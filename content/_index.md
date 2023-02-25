@@ -4,7 +4,7 @@ type: docs
 ---
 Hi
 
-I am amuldotexe
+I am amuldotexe.
 
 Have been working in tech since 2010
 
