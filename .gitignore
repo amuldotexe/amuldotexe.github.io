@@ -1,0 +1,24 @@
+# Ignore the public directory, as it will be generated during the build process
+/public/
+
+# Ignore the .DS_Store file on macOS systems
+.DS_Store
+
+# Ignore the node_modules directory if you're using npm
+node_modules/
+
+### Hugo ###
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
