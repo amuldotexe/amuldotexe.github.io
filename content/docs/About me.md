@@ -19,8 +19,8 @@ Hope this is useful to you
 Feel free to DM me on twitter:
 
 Profile link:
-{{< link url="https://twitter.com/amuldotexe" text="amuldotexe on twitter" title="amuldotexe on twitter" class="btn btn-primary" >}}
+{{< link url="https://twitter.com/amuldotexe" text="amuldotexe on twitter" >}}
 
 DM link:
-{{< link url="https://twitter.com/messages/compose?recepient_id=1132151165410455552" text="DM amuldotexe on twitter" title="amuldotexe on twitter" class="btn btn-primary" >}}
+{{< link url="https://twitter.com/messages/compose?recepient_id=1132151165410455552" text="DM amuldotexe on twitter">}}
  
