@@ -17,11 +17,10 @@ This website is a collection of my notes on various topics
 Hope this is useful to you
 
 Feel free to DM me on twitter:
-twitter.com/amuldotexe
 
+Profile link:
+{{< link url="https://www.twitter.com/amuldotexe" text="amuldotexe on twitter" title="amuldotexe on twitter" class="btn btn-primary" >}}
 
-# ABC
-
-## DEF
-
-### GHI
+DM link:
+{{< link url="https://www.twitter.com/messages/compose?recepient_id=1132151165410455552" text="DM amuldotexe on twitter" title="amuldotexe on twitter" class="btn btn-primary" >}}
+ 
