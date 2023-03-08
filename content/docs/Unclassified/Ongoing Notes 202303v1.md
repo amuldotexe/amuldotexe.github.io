@@ -37,4 +37,5 @@ I am going to use the Eisenhower Matrix
 
 Important and Urgent
    - Structure the google folder
+   - Create a six horizons of focus replacement
    - 
