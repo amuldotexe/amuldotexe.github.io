@@ -57,10 +57,14 @@ Let us classify some problems into Important and Urgent buckets
 - [x] Create DM me hyperlink with Hello World default text
 - [x] I want to create button for DM me on twitter
 - [x] I want to embed DM me on twitter in each page on footer. How do I manipulate the footer
-- [ ] I want to embed tweets in the page, how can I do that HTML wise
+- [x] I want to embed tweets in the page, how can I do that HTML wise
 - [ ] I want to embed Youtube videos in the page, how can I do that HTML wise with smaller size
 - [ ] I want to order the pages in the sidebar in a specific order which is not alphabetical
 - [ ] Does it makes sense to have About Me page separately apart from having that description in the index md
+- [ ] Can we embed Miro elements in the hugo website
+  - [ ] Constituent elements of MIRO
+- [ ] How to emnbed an image from google photos using HTML
+- [ ] 
 
 
 Action Items:
@@ -69,6 +73,10 @@ Action Items:
 - Understand how to create a footer in Hugo
 - 
 
+Random Ideas:
+- Shreyas & Creators notes in Secret Compendium
+- Shreyas tweets can be embedded in these pages
+- How to create ebooks from Hugo website
 
 
 
