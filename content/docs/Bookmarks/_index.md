@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-title: Bookmarks
+title: Zookmarks
 ---
 
 # ABC
