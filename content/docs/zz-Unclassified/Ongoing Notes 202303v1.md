@@ -54,6 +54,10 @@ Let us classify some problems into Important and Urgent buckets
 
 ## How to customize Hugo website experience for readers of my blog
 
-- I want to make it easy for people to read my blog
-- I want to embed tweets
-- I want to embed DM me on twitter in each page
+- [ ] I want to create button for DM me on twitter
+- [ ] I want to embed DM me on twitter in each page on footer. How do I manipulate the footer
+- [ ] I want to embed tweets in the page, how can I do that HTML wise
+- [ ] I want to embed Youtube videos in the page, how can I do that HTML wise with smaller size
+- [ ] I want to order the pages in the sidebar in a specific order which is not alphabetical
+- [ ] Does it makes sense to have About Me page separately apart from having that description in the index md
+- [ ] 
