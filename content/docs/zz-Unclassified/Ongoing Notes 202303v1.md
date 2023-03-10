@@ -61,4 +61,15 @@ Let us classify some problems into Important and Urgent buckets
 - [ ] I want to embed Youtube videos in the page, how can I do that HTML wise with smaller size
 - [ ] I want to order the pages in the sidebar in a specific order which is not alphabetical
 - [ ] Does it makes sense to have About Me page separately apart from having that description in the index md
-- [ ] 
+
+
+Action Items:
+- Use HTML everywhere instead of shortcodes
+- Understand why Hugo does not have layouts
+- Understand how to create a footer in Hugo
+- 
+
+
+
+
+
