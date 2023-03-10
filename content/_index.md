@@ -22,4 +22,6 @@ Hope this is useful to you
 
 <a href="https://twitter.com/messages/compose?recipient_id=1132151165410455552&text=Hello%20world"
   class="twitter-dm-button" data-screen-name="@amuldotexe">
-Message @amuldotexe</a> 
+Message @amuldotexe</a>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
