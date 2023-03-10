@@ -55,3 +55,5 @@ Let us classify some problems into Important and Urgent buckets
 ## How to customize Hugo website experience for readers of my blog
 
 - I want to make it easy for people to read my blog
+- I want to embed tweets
+- I want to embed DM me on twitter in each page
