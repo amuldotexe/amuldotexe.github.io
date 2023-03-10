@@ -52,3 +52,6 @@ Let us classify some problems into Important and Urgent buckets
 
 ## How to structure the google folder
 
+## How to customize Hugo website experience for readers of my blog
+
+- I want to make it easy for people to read my blog

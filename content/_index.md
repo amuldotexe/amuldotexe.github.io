@@ -1,10 +1,12 @@
 ---
-title: the diary of amuldotexe
-type: docs
+bookCollapseSection: false
+title: About Me
 ---
+
+
 Hi
 
-I am amuldotexe.
+I am amuldotexe
 
 Have been working in tech since 2010
 
@@ -14,5 +16,9 @@ This website is a collection of my notes on various topics
 
 Hope this is useful to you
 
-Feel free to DM me on twitter:
-twitter.com/amuldotexe
+<a href="https://twitter.com/messages/compose?recepient_id=1132151165410455552">DM me on twitter</a>
+
+<a href="https://twitter.com/amuldotexe"> My twitter profile</a>
+
+<a href="https://linkedin.com/in/amuldotexe"> My Linkedin profile</a>
+ 
