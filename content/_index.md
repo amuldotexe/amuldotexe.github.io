@@ -20,8 +20,9 @@ Hope this is useful to you
 
 <a href="https://linkedin.com/in/amuldotexe"> My Linkedin profile</a>
 
-<a href="https://twitter.com/messages/compose?recipient_id=1132151165410455552&text=Hello%20world"
-  class="twitter-dm-button" data-screen-name="@amuldotexe">
-Message @amuldotexe</a>
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">Pinned Tweet</p>
+  &mdash; amuldotexe (@amuldotexe) <a href="https://twitter.com/amuldotexe/status/1570106688845512707">March 10, 2023</a>
+</blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
