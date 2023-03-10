@@ -22,7 +22,7 @@ Hope this is useful to you
 
 <a href="https://linkedin.com/in/amuldotexe"> My Linkedin profile</a>
 
-<a href="https://twitter.com/messages/compose?recipient_id=3805104374&text=Hello%20world"
+<a href="https://twitter.com/messages/compose?recipient_id=1132151165410455552&text=Hello%20world"
   class="twitter-dm-button" data-screen-name="@amuldotexe">
 Message @amuldotexe</a>
  
