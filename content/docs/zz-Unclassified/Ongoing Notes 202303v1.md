@@ -54,6 +54,7 @@ Let us classify some problems into Important and Urgent buckets
 
 ## How to customize Hugo website experience for readers of my blog
 
+- [x] Create DM me hyperlink with Hello World default text
 - [ ] I want to create button for DM me on twitter
 - [ ] I want to embed DM me on twitter in each page on footer. How do I manipulate the footer
 - [ ] I want to embed tweets in the page, how can I do that HTML wise
