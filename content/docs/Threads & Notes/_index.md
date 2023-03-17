@@ -1,10 +1,13 @@
 ---
 bookCollapseSection: true
-title: Thought Experiments
+title: Threads & Notes
 ---
 
-# ABC
 
-## DEF
+# Unclassified
 
-### GHI
+
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">Pinned Tweet</p>
+  &mdash; amuldotexe (@amuldotexe) <a href="https://twitter.com/amuldotexe/status/1570106688845512707">March 10, 2023</a>
+</blockquote>
