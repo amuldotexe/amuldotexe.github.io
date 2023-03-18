@@ -6,6 +6,8 @@ title: Threads & Notes
 
 # Unclassified
 
+{{< tabs "uniqueid" >}}
+{{< tab "Low risk dev career advice" >}}
 ### Low risk dev career advice
 
 <blockquote class="twitter-tweet">
@@ -14,3 +16,8 @@ title: Threads & Notes
 </blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+{{< /tab >}}
+
+
+{{< /tabs >}}
