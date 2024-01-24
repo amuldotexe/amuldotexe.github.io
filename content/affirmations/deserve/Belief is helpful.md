@@ -1,11 +1,10 @@
---
+---
 title: "Believing that you deserve something is often helpful"
 linkTitle: "Believing that you deserve something is often helpful"
 bookCollapseSection: true
 weight: 20
-
 bookToc: true
---
+---
 Hypothesis:
 Believing that you deserve something is often helpful
 
