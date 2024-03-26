@@ -1,9 +1,24 @@
 ---
 bookCollapseSection: false
-title: About Me
+title: playbook of amuldotexe
 ---
 
-<!DOCTYPE html>
+---
+title: "Redirecting..."
+---
+
+<script type="text/javascript">
+    window.location.href = "https://docs.google.com/document/d/YOUR_DOCUMENT_ID";
+</script>
+
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM">
+    <p>If you are not redirected, <a href="https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM">click here</a>.</p>
+</noscript>
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,4 +46,4 @@ Feel free to DM me on twitter
 
 <a href="https://twitter.com/amuldotexe"> Here's my twitter profile</a>
 
-Or you can directly DM me using the DM button below, it will directly open a DM chat with me on twitter
+Or you can directly DM me using the DM button below, it will directly open a DM chat with me on twitter -->
