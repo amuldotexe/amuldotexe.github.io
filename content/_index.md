@@ -8,12 +8,12 @@ title: "playbook of amuldotexe"
 ---
 
 <script type="text/javascript">
-    window.location.href = "https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3";
+    window.location.href = "https://e5ie.short.gy/v20240324";
 </script>
 
 <noscript>
-    <meta http-equiv="refresh" content="0;url=https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3">
-    <p>If you are not redirected, <a href="https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3">click here</a>.</p>
+    <meta http-equiv="refresh" content="0;url=https://e5ie.short.gy/v20240324">
+    <p>If you are not redirected, <a href="https://e5ie.short.gy/v20240324">click here</a>.</p>
 </noscript>
 
 
