@@ -8,7 +8,7 @@ title: "Redirecting..."
 ---
 
 <script type="text/javascript">
-    window.location.href = "https://docs.google.com/document/d/YOUR_DOCUMENT_ID";
+    window.location.href = "https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM";
 </script>
 
 <noscript>
