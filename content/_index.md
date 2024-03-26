@@ -4,16 +4,16 @@ title: playbook of amuldotexe
 ---
 
 ---
-title: "Redirecting..."
+title: "playbook of amuldotexe"
 ---
 
 <script type="text/javascript">
-    window.location.href = "https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM";
+    window.location.href = "https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3";
 </script>
 
 <noscript>
-    <meta http-equiv="refresh" content="0;url=https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM">
-    <p>If you are not redirected, <a href="https://docs.google.com/document/d/1QYSOBWbZ7X0bBQf6qqAw_bQsMEqJxl5KBYL15yHpdXM">click here</a>.</p>
+    <meta http-equiv="refresh" content="0;url=https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3">
+    <p>If you are not redirected, <a href="https://1drv.ms/w/s!An_Xz_ZBkHKShskdDUbzr85_5U1p-g?e=SmGHd3">click here</a>.</p>
 </noscript>
 
 
