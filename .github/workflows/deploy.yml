@@ -18,7 +18,8 @@ jobs:
       - name: Create deployment directory
         run: |
           mkdir deploy
-          cp -r index.html public txtRef deploy/
+          cp index.html deploy/
+          cp -r txtRef deploy/
           cp README.md deploy/
       
       - name: Deploy to GitHub Pages
