@@ -1,34 +1,67 @@
 # that-in-Rust
 
-Learning Rust programming language, one concept at a time.
+A simple, elegant landing page for my Rust learning journey.
 
-Visit: [https://github.com/that-in-rust](https://github.com/that-in-rust)
+## 🌐 Live Site
 
-## Development
+Visit the live site at [https://amuldotexe.github.io](https://amuldotexe.github.io)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🏗️ Project Structure
 
-### Getting Started
-
-First, install the dependencies:
-```bash
-npm install
+```
+.
+├── index.html          # Main landing page
+├── txtRef/            # Reference documents
+│   ├── ref01currentState.txt
+│   ├── ref02newPRD.txt
+│   └── ref03archL1.txt
+└── .github/workflows/  # GitHub Actions workflows
+    └── deploy.yml     # Deployment configuration
 ```
 
-Then, run the development server:
-```bash
-npm run dev
-```
+## 🚀 Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This site is deployed using GitHub Pages with GitHub Actions. The deployment process works as follows:
 
-### Learn More
+1. Push changes to the `main` branch
+2. GitHub Actions workflow automatically:
+   - Creates a clean deployment directory
+   - Copies only the necessary static files
+   - Uploads the artifact
+   - Deploys to GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The deployment is handled by `.github/workflows/deploy.yml` which uses official GitHub Pages actions:
+- `actions/configure-pages@v3`: Sets up GitHub Pages
+- `actions/upload-pages-artifact@v2`: Bundles the site
+- `actions/deploy-pages@v2`: Deploys to Pages
 
-## Deployment
+No build step is required as this is a pure static site.
 
-This site is deployed using GitHub Pages. The deployment is automated through GitHub Actions.
+## 🛠️ Development
+
+To work on this site locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/amuldotexe/amuldotexe.github.io.git
+   cd amuldotexe.github.io
+   ```
+
+2. Make your changes to the HTML/CSS in `index.html`
+
+3. Test locally by opening `index.html` in a browser
+
+4. Push changes to GitHub:
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+
+The site will automatically deploy after pushing to main.
+
+## 📝 License
+
+MIT License - feel free to use this code as you wish!
