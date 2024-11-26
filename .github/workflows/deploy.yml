@@ -12,26 +12,30 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v3
       
-      - name: Create clean deployment directory
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        
+      - name: Create deployment directory
         run: |
-          mkdir deploy
-          cp index.html deploy/
-          cp -r txtRef deploy/
-          cp README.md deploy/
-          touch deploy/.nojekyll
+          mkdir _site
+          cp index.html _site/
+          cp -r txtRef _site/
+          cp README.md _site/
+          touch _site/.nojekyll
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '_site'
       
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy static site to GitHub Pages'
-          enable_jekyll: false
+        id: deployment
+        uses: actions/deploy-pages@v2
