@@ -1,0 +1,68 @@
+# txt-sectumsempra v0.1 Architecture
+
+## Core Components
+
+### 1. Chunker
+- Single struct handling file operations
+- Methods:
+  - `split_file(path: &Path, size_mb: u64) -> Result<Vec<PathBuf>>`
+  - `validate(original: &Path, chunks: &[PathBuf]) -> Result<bool>`
+- Behavior:
+  - Splits into N MB chunks (last chunk may be smaller)
+  - Maintains original file order
+  - Creates output directory with format: {truncated_name(20)}-{timestamp}
+  - Names chunks as: {truncated_name(20)}-part-{index}.txt
+  - Shows progress with ANSI-formatted percentage display
+
+### 2. Error Handling
+- Error enum `ChunkError` implementing std::error::Error trait
+- Proper error messages and source tracking
+- Conversion from std::io::Error
+
+## Project Structure
+```
+.
+├── Cargo.toml       # Dependency management
+├── src/
+│   ├── main.rs      # CLI + arg parsing
+│   ├── lib.rs       # Core functionality
+│   └── error.rs     # Error types
+│
+├── tests/
+│   └── integration_tests.rs  # All tests including file generation
+│
+└── txt-ref/        # Reference documents (DO NOT MODIFY)
+    ├── ref01-prd.txt
+    ├── ref02-archL1.txt
+    └── ref03-bugTracker.txt
+
+Note: target/ and other build artifacts are not shown
+```
+
+## Test Strategy
+1. Test File Generation:
+   - Built into integration tests
+   - Creates predictable test files with repeating pattern
+   - Proper cleanup after each test
+
+2. Tests:
+   - Basic split/merge functionality
+   - Exact chunk size validation
+   - Output directory format verification
+   - Empty file handling
+   - Invalid chunk size handling
+   - Missing chunks validation
+
+## Implementation Notes
+- Use buffered reads/writes (8KB buffer)
+- Single-pass validation using SHA-256
+- Progress indication with ANSI escape codes
+- Proper cleanup of temporary files
+- Error handling with detailed messages
+
+## Build and Dependencies
+- Uses Cargo for dependency management
+- Required dependencies:
+  - sha2: For checksum calculation
+  - clap: For CLI argument parsing
+  - tempfile: For test file management

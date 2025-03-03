@@ -1,0 +1,8 @@
+// Last good working state as of 03 Mar 2025 - 
+4da9767 (HEAD -> main, origin/main, origin/HEAD) Update reference documentation
+79ce324 Final polish: Update README, add LICENSE, and clean .gitignore
+1af9895 Update workflow to use official GitHub Pages actions
+f93e99b Update workflow for clean static site deployment
+4033e5e Fix deployment workflow by removing non-existent directory
+
+====================================
