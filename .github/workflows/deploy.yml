@@ -25,9 +25,11 @@ jobs:
 
       - name: Create deployment directory
         run: |
-          mkdir _site
+          mkdir -p _site/css _site/js _site/algorithms
           cp index.html _site/
-          cp -r txtRef _site/
+          cp css/shared.css _site/css/
+          cp js/binary-search.js _site/js/
+          cp algorithms/binary-search.html _site/algorithms/
           cp README.md _site/
           touch _site/.nojekyll
 

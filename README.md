@@ -1,67 +1,44 @@
-# that-in-Rust
+# amuldotexe.github.io
 
-A simple, elegant landing page for my Rust learning journey.
+**algorithmic-intuition** -- interactive algorithm simulations with a terminal aesthetic. Step through algorithms visually, one click at a time.
 
-## 🌐 Live Site
+## Live Site
 
-Visit the live site at [https://amuldotexe.github.io](https://amuldotexe.github.io)
+[https://amuldotexe.github.io](https://amuldotexe.github.io)
 
-## 🏗️ Project Structure
+## Algorithms
+
+| Algorithm | Status |
+|-----------|--------|
+| Binary Search | done |
+| (more coming) | -- |
+
+## Project Structure
 
 ```
 .
-├── index.html          # Main landing page
-├── txtRef/            # Reference documents
-│   ├── ref01currentState.txt
-│   ├── ref02newPRD.txt
-│   └── ref03archL1.txt
-└── .github/workflows/  # GitHub Actions workflows
-    └── deploy.yml     # Deployment configuration
+├── index.html              # Landing page
+├── css/
+│   └── shared.css          # Shared terminal theme
+├── js/
+│   └── binary-search.js    # Binary search simulation logic
+├── algorithms/
+│   └── binary-search.html  # Binary search simulation page
+└── .github/workflows/
+    └── deploy.yml          # GitHub Pages deployment
 ```
 
-## 🚀 Deployment
+## Adding a New Algorithm
 
-This site is deployed using GitHub Pages with GitHub Actions. The deployment process works as follows:
+1. Create `algorithms/<name>.html` using the existing page as a template
+2. Create `js/<name>.js` with step precomputation and rendering logic
+3. Add a card link in `index.html` under the algorithms section
+4. Add copy lines in `.github/workflows/deploy.yml`
 
-1. Push changes to the `main` branch
-2. GitHub Actions workflow automatically:
-   - Creates a clean deployment directory
-   - Copies only the necessary static files
-   - Uploads the artifact
-   - Deploys to GitHub Pages
+## Development
 
-### Deployment Configuration
+Open any HTML file directly in a browser. No build tools needed.
 
-The deployment is handled by `.github/workflows/deploy.yml` which uses official GitHub Pages actions:
-- `actions/configure-pages@v3`: Sets up GitHub Pages
-- `actions/upload-pages-artifact@v2`: Bundles the site
-- `actions/deploy-pages@v2`: Deploys to Pages
+## License
 
-No build step is required as this is a pure static site.
-
-## 🛠️ Development
-
-To work on this site locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amuldotexe/amuldotexe.github.io.git
-   cd amuldotexe.github.io
-   ```
-
-2. Make your changes to the HTML/CSS in `index.html`
-
-3. Test locally by opening `index.html` in a browser
-
-4. Push changes to GitHub:
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push origin main
-   ```
-
-The site will automatically deploy after pushing to main.
-
-## 📝 License
-
-MIT License - feel free to use this code as you wish!
+MIT

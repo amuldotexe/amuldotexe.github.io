@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binary_search // algorithmic-intuition</title>
+    <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body class="terminal-theme">
+
+    <nav class="sim-nav">
+        <a href="../index.html" class="nav-back">&lt; home</a>
+        <span class="nav-brand">algorithmic-intuition</span>
+    </nav>
+
+    <div class="sim-page">
+
+        <header class="sim-header">
+            <h1 class="sim-title">&gt; binary_search</h1>
+            <p class="sim-subtitle">find a target in a sorted array by repeatedly halving the search space.</p>
+        </header>
+
+        <!-- Intuition -->
+        <section class="sim-section">
+            <h2>// intuition</h2>
+            <p>imagine looking up a word in a physical dictionary. you wouldn't start at page 1 and flip through every page. you'd open it roughly in the middle, see if your word comes before or after, then repeat in the correct half.</p>
+            <p>binary search does exactly this with a sorted array. given an element in the middle:</p>
+            <ul>
+                <li>if it equals the target &mdash; done, we found it</li>
+                <li>if it's smaller than the target &mdash; discard the left half (everything there is even smaller)</li>
+                <li>if it's larger than the target &mdash; discard the right half (everything there is even larger)</li>
+            </ul>
+            <p>each step cuts the search space in half. for 1,000 elements that's ~10 steps. for 1,000,000 elements, ~20 steps. that's O(log n).</p>
+        </section>
+
+        <!-- Simulation -->
+        <section class="sim-section">
+            <h2>// simulation</h2>
+            <p>click any cell to set it as the target. step through with the buttons or arrow keys.</p>
+        </section>
+
+        <div class="sim-viewport">
+            <div class="step-counter">
+                <span id="step-label">step 0 of 0</span>
+            </div>
+            <div class="target-display">
+                target: <span id="target-display">72</span>
+            </div>
+            <div class="array-container" id="array-container"></div>
+            <div class="pointer-row" id="pointer-row"></div>
+            <div class="eli5-box">
+                <span class="eli5-prompt">&gt;</span>
+                <span id="eli5-text">press [next] to start the search.</span>
+                <span class="eli5-cursor"></span>
+            </div>
+            <div class="sim-controls">
+                <button id="btn-prev" class="sim-btn" disabled>&lt; prev</button>
+                <button id="btn-next" class="sim-btn">next &gt;</button>
+                <button id="btn-reset" class="sim-btn sim-btn-secondary">reset</button>
+            </div>
+        </div>
+
+        <!-- Implementation -->
+        <section class="sim-section">
+            <h2>// implementation</h2>
+            <p>the search range is tracked by <code>left</code> and <code>right</code> pointers starting from both ends. they move toward each other as we eliminate halves.</p>
+            <pre class="code-block"><span class="kw">def</span> <span class="fn">binary_search</span>(arr, target):
+    left, right = <span class="num">0</span>, len(arr) - <span class="num">1</span>
+    <span class="cm"># &lt;= because left and right could point</span>
+    <span class="cm"># to the same element, &lt; would miss it</span>
+    <span class="kw">while</span> left &lt;= right:
+        mid = (left + right) // <span class="num">2</span>
+        <span class="kw">if</span> arr[mid] == target:
+            <span class="kw">return</span> mid
+        <span class="kw">elif</span> arr[mid] &lt; target:
+            left = mid + <span class="num">1</span>   <span class="cm"># discard left half</span>
+        <span class="kw">else</span>:
+            right = mid - <span class="num">1</span>  <span class="cm"># discard right half</span>
+    <span class="kw">return</span> -<span class="num">1</span>  <span class="cm"># not found</span></pre>
+            <p class="code-note">tip: use (left + right) // 2 in python. in other languages, use left + (right - left) / 2 to avoid integer overflow.</p>
+        </section>
+
+        <!-- Deducing Binary Search -->
+        <section class="sim-section">
+            <h2>// deducing binary search</h2>
+            <p>understand it, don't memorize it. three things to get right:</p>
+
+            <div class="qa-block">
+                <h3>1. when to terminate the loop?</h3>
+                <p>use <code>while left &lt;= right</code> (not <code>&lt;</code>). the equals case handles a one-element search range. without it, you'd skip checking the last remaining element.</p>
+            </div>
+
+            <div class="qa-block">
+                <h3>2. how to update the boundaries?</h3>
+                <p>if arr[mid] &lt; target, set <code>left = mid + 1</code> (discard left half including mid). if arr[mid] &gt; target, set <code>right = mid - 1</code> (discard right half including mid). the +1/-1 is critical &mdash; without it, the loop can get stuck.</p>
+            </div>
+
+            <div class="qa-block">
+                <h3>3. should you discard the current element?</h3>
+                <p>for vanilla binary search, yes. if arr[mid] != target, mid can't be the answer. but in variations (finding first/last occurrence, boundary searches), you may need to keep mid in the range.</p>
+            </div>
+        </section>
+
+        <!-- When to Use -->
+        <section class="sim-section">
+            <h2>// when to use binary search</h2>
+            <p>binary search works beyond sorted arrays. the key insight: you can use it whenever you can make a binary decision that eliminates half the remaining options.</p>
+            <ul>
+                <li>sorted arrays (vanilla search, first/last occurrence)</li>
+                <li>rotated sorted arrays (find minimum, search for target)</li>
+                <li>monotonic functions (square root estimation, capacity problems)</li>
+                <li>answer space reduction (minimize maximum, split arrays)</li>
+            </ul>
+        </section>
+
+        <footer class="sim-footer">
+            <span>time: O(log n)</span>
+            <span>space: O(1)</span>
+        </footer>
+
+    </div>
+
+    <script src="../js/binary-search.js"></script>
+</body>
+</html>

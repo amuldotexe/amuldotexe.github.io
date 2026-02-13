@@ -4,58 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>that-in-Rust</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            background: #fafafa;
-            color: #333;
-            text-align: center;
-        }
-        .logo {
-            font-size: 72px;
-            margin: 20px 0;
-        }
-        .title {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #000;
-        }
-        .buttons {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        .link {
-            display: inline-block;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background 0.2s ease;
-        }
-        .github {
-            background: #FF4500;
-            color: white;
-        }
-        .github:hover {
-            background: #CC3700;
-        }
-        .twitter {
-            background: #1DA1F2;
-            color: white;
-        }
-        .twitter:hover {
-            background: #1884C7;
-        }
-    </style>
+    <link rel="stylesheet" href="css/shared.css">
 </head>
-<body>
+<body class="landing">
     <div class="logo">🦀</div>
     <h1 class="title">that-in-Rust</h1>
     <div class="buttons">
@@ -64,6 +15,19 @@
         </a>
         <a href="https://x.com/messages/compose?recipient_id=1132151165410455552&text=Hello+from+that-in-rust" class="link twitter">
             DM on X
+        </a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-title">&gt; algorithmic-intuition</div>
+    <p class="section-desc">step-by-step visual walkthroughs. click through each one.</p>
+
+    <div class="algo-grid">
+        <a href="algorithms/binary-search.html" class="algo-card">
+            <span class="algo-icon">[ / ]</span>
+            <span class="algo-name">binary_search</span>
+            <span class="algo-tag">search</span>
         </a>
     </div>
 </body>
